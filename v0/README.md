@@ -44,4 +44,5 @@ h6 {
 ```
 
     [] Border Box: Applies the box-sizing: border-box; rule to all elements for a more predictable layout model.
-    [] Utility-Focused: Includes a few minor style adjustments specific to Tailwind's utility classes (e.g., how borders are handled).
+    [x] Utility-Focused: Includes a few minor style adjustments specific to Tailwind's utility classes (e.g., how borders are handled).
+    [] Add the colors from colors.js
