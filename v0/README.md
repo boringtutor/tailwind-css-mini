@@ -7,11 +7,11 @@ called Preflight. Here's what makes it different:
 
 Key aspects of Tailwind CSS's Preflight:
 
-[x] Normalization: It inherits most foundational styles from Normalize.css, ensuring consistent rendering of basic elements across browsers.
+- [x] Normalization: It inherits most foundational styles from Normalize.css, ensuring consistent rendering of basic elements across browsers.
 
-[x] Barebones Styling: Preflight removes default margins from many elements. Styling opinions like default font sizes or heading sizes are removed to give you a nearly blank slate for your utility classes.
+- [x] Barebones Styling: Preflight removes default margins from many elements. Styling opinions like default font sizes or heading sizes are removed to give you a nearly blank slate for your utility classes.
 
-[x] Removing Default Margins:
+- [x] Removing Default Margins:
 
 ```css
 /* Option 1: Targeting specific elements */
@@ -31,7 +31,7 @@ body > * {
 }
 ```
 
-[x] Neutralizing Default Styles:
+- [x] Neutralizing Default Styles:
 
 ```css
 h1,
@@ -45,9 +45,9 @@ h6 {
 }
 ```
 
-[] Border Box: Applies the box-sizing: border-box; rule to all elements for a more predictable layout model.
+- [] Border Box: Applies the box-sizing: border-box; rule to all elements for a more predictable layout model.
 
-[x] Utility-Focused: Includes a few minor style adjustments specific to Tailwind's utility
-classes (e.g., how borders are handled).
+- [x] Utility-Focused: Includes a few minor style adjustments specific to Tailwind's utility
+      classes (e.g., how borders are handled).
 
-[] Add the colors from colors.js
+- [] Add the colors from colors.js
