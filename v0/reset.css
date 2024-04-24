@@ -20,10 +20,11 @@ html {
    * Remove the margin in all browsers.
    */
 
-body {
-  margin: 0;
+body > * {
+  margin: 0; /* Remove default body margins */
+  font-family: sans-serif; /* Set a basic font */
+  line-height: 1.5;
 }
-
 /**
    * Render the `main` element consistently in IE.
    */
@@ -36,16 +37,6 @@ main {
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
-
-h1 {
-  font-size: 1em;
-  margin: 0.67em 0;
-}
-
-h2 {
-  font-size: 1em;
-  margin: 0.67em 0;
-}
 
 /* Grouping content
      ========================================================================== */
@@ -353,4 +344,76 @@ template {
 
 [hidden] {
   display: none;
+}
+
+/**
+    Neutralization :
+    *************************************************************************************
+*/
+
+img,
+video,
+embed,
+iframe {
+  max-width: 100%; /* Responsive behavior */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent unwanted gaps */
+}
+
+table {
+  border-collapse: collapse; /* Make table borders merge */
+  width: 100%; /* Full width by default */
+}
+
+th,
+td {
+  border: 1px solid #ddd; /* Basic table cell borders */
+}
+
+/* ***********************forms************** */
+input,
+textarea,
+select,
+button {
+  /* Appearance */
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  margin: 0.25em;
+  font-family: inherit;
+
+  /* Interaction */
+  -webkit-appearance: none; /* Normalize appearance across browsers */
+  -moz-appearance: none;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  display: none; /* Remove Safari's default search input styling */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit; /* Reset to inherit from their parent element */
+  font-weight: normal; /* Reset to normal font weight */
+  font-size: 1em;
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Removes bullet points or numbers */
+}
+
+/*****************
+    *  Reset margin
+    ****************TODO: REMOVE DEFAULT MARGIN FROM ALL ELEMENTS 
+                    NOTE: use with caution and REMOVE IT IF NEED SOME DEFAULT STYLES OR BEHAVIOR
+*/
+* {
+  margin: 0;
 }

@@ -7,7 +7,41 @@ called Preflight. Here's what makes it different:
 
 Key aspects of Tailwind CSS's Preflight:
 
-    [] Normalization: It inherits most foundational styles from Normalize.css, ensuring consistent rendering of basic elements across browsers.
+    [x] Normalization: It inherits most foundational styles from Normalize.css, ensuring consistent rendering of basic elements across browsers.
     [] Barebones Styling: Preflight removes default margins from many elements. Styling opinions like default font sizes or heading sizes are removed to give you a nearly blank slate for your utility classes.
+        [] Removing Default Margins:
+
+```css
+/* Option 1: Targeting specific elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Option 2:  A broader reset for more elements */
+body > * {
+  margin: 0;
+}
+```
+
+        [] Neutralizing Default Styles:
+
+```css
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit; /* Reset to inherit from their parent element */
+  font-weight: normal; /* Reset to normal font weight */
+}
+```
+
     [] Border Box: Applies the box-sizing: border-box; rule to all elements for a more predictable layout model.
     [] Utility-Focused: Includes a few minor style adjustments specific to Tailwind's utility classes (e.g., how borders are handled).
