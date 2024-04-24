@@ -1,6 +1,35 @@
-.bg-blue-500 {
-  background-color: #3182ce;
+@import url("color.css");
+/* colors definations */
+.bg-rose-100 {
+  background-color: #ffe4e6;
 }
+.bg-rose-200 {
+  background-color: #fecdd3;
+}
+.bg-rose-300 {
+  background-color: #fda4af;
+}
+.bg-rose-400 {
+  background-color: #fb7185;
+}
+.bg-rose-500 {
+  background-color: #f43f5e;
+}
+.bg-rose-600 {
+  background-color: #e11d48;
+}
+.bg-rose-700 {
+  background-color: #be123c;
+}
+.bg-rose-800 {
+  background-color: #9f1239;
+}
+.bg-rose-900 {
+  background-color: #881337;
+}
+
+/* end colors defination */
+
 .hover\:bg-blue-700:hover {
   background-color: #2563eb;
 }
