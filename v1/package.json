@@ -4,11 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node generate-css.js && vite",
-    "build": "node generate-css.js && vite build",
+    "build-css": "postcss input.css -o output.css",
+    "dev": "concurrently \"npm run build-css -- --watch\" \"vite\"",
+    "build": "concurrently \"npm run build-css\" \"vite build\"",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
     "vite": "^5.2.0"
   }
 }
