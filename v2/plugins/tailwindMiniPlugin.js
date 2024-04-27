@@ -1,5 +1,17 @@
+import { config } from "../tailwind-mini.config.js";
 import postcss from "postcss/lib/postcss";
+import chalk from "chalk";
 
+function logg(message) {
+  console.log(chalk.green(message));
+}
+function logerr(message) {
+  console.log(chalk.red(message));
+}
+
+// logg("config", config.theme);
+// const theme = config.theme.extend;
+// logerr("theme", theme);
 export default postcss.plugin("tailwindMiniPlugin", () => {
   return (root) => {
     root.walkAtRules("tailwind-mini", (rule) => {
@@ -302,6 +314,35 @@ video {
 .p-32 { padding: 32px; }
 .p-64 { padding: 64px; }
                 `);
+        Object.entries(config.theme.extend).forEach(([key, value]) => {
+          if (key === "colors") {
+            for (const color in value) {
+              root.append(
+                postcss
+                  .rule({ selector: `.text-${color}` })
+                  .append({ prop: "color", value: value[color] })
+              );
+              root.append(
+                postcss
+                  .rule({ selector: `.bg-${color}` })
+                  .append({ prop: "background-color", value: value[color] })
+              );
+            }
+          } else if (key === "spacing") {
+            for (const size in value) {
+              root.append(
+                postcss
+                  .rule({ selector: `.p-${size}` })
+                  .append({ prop: "padding", value: value[size] })
+              );
+              root.append(
+                postcss
+                  .rule({ selector: `.m-${size}` })
+                  .append({ prop: "margin", value: value[size] })
+              );
+            }
+          }
+        });
       }
     });
   };
