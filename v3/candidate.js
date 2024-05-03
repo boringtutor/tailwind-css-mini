@@ -1,0 +1,4 @@
+const COLON = 0x3a
+const DASH = 0x2d
+const LOWER_A = 0x61
+const LOWER_Z = 0x7a

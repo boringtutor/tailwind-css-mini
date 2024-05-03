@@ -1,52 +1,40 @@
 import { findUsedClasses } from "./filescanner.js";
-import generateCSS from "./lexer.js";
-import generateAst from "./lexer.js";
 
-const config = {
-    spacing: {
-      'p': 'padding',
-      'm': 'margin',
-      'pl': 'padding-left',
-      'pr': 'padding-right',
-      'py': 'padding-top padding-bottom',
-      'my': 'margin-top margin-bottom',
-      'mt': 'margin-top'
-    },
-    colors: {
-      'text': 'color',
-      'bg': 'background-color',
-      'ring': 'border-color',
-      'placeholder': 'color' // Simplified for demonstration
-    },
-    fontSize: {
-      'text-sm': '0.875rem', // 14px
-      'sm:text-sm': '0.875rem' // Responsive example, simplified
-    },
-    other: {
-      'rounded-md': 'border-radius: 0.375rem',
-      'shadow-sm': 'box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-      'block': 'display: block',
-      'relative': 'position: relative',
-      'absolute': 'position: absolute',
-      'flex': 'display: flex',
-      'items-center': 'align-items: center',
-      'w-full': 'width: 100%',
-      'h-full': 'height: 100%',
-      'border-0': 'border: 0',
-      'bg-transparent': 'background-color: transparent',
-      'sr-only': 'position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0'
+import { Node } from "./utils/segment.js";
+//TODO: 1. design system
+//TODO: 2. candidate for ast.
+//TODO: 1. ast generation
+//TODO: 1. transform ast to css
+//TODO: 1. generate css file.
+
+
+function test(str){
+    let ss = str.split(':');
+    if(ss.length===1){
+       ss  = str.split('-')
+       console.log(`this is ${ss} with - varient`)
     }
-  };
+    else{
+        console.log(`this is ${ss} with : varient`)
+    }
+}
 
+const test1 = 'bg-red-200'
+const test2 = 'hover:bg-red-200'
 
 async function buildCSS() {
     const usedClasses = await findUsedClasses('**/*.html');
-    // console.warn(usedClasses)
-    // const css = generateCSS(usedClasses, config);
-    // await fs.writeFile('output.css', css, 'utf8');
-    const ast =  generateAst(usedClasses);
-    console.log('the ast generated is  -> ')
-    console.log(ast)
+//    console.log(usedClasses);
+   
+    let nn = new Node('sm:text-sm');
+    let res = nn.append_colon_seprator();
+    console.log(res[0])
+    // let res = nn.createAst(usedClasses);
+    // console.log('this is the result i got')
+    // console.log(res)
+    // console.warn('this is the result i got')
+    
+
   }
   
   buildCSS().then(() => console.log('CSS generated successfully.'));

@@ -1,0 +1,156 @@
+[
+    
+  
+    {
+      kind: 'functional',
+      root: 'text',
+      value: { kind: 'named', value: 'sm-undefined' },
+      variants: [ [Object] ]
+    },
+    {
+      kind: 'functional',
+      root: 'w',
+      value: { kind: 'named', value: 'full' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'border',
+      value: { kind: 'named', value: '0' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'py',
+      value: { kind: 'named', value: '1.5' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'pl',
+      value: { kind: 'named', value: '7' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'pr',
+      value: { kind: 'named', value: '20' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'ring',
+      value: { kind: 'named', value: '1' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'ring',
+      value: { kind: 'named', value: 'inset' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'ring',
+      value: { kind: 'named', value: 'gray-300' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'text',
+      value: { kind: 'named', value: 'gray-400' },
+      variants: [ [Object] ]
+    },
+    {
+      kind: 'functional',
+      root: 'ring',
+      value: { kind: 'named', value: '2-undefined' },
+      variants: [ [Object] ]
+    },
+    {
+      kind: 'functional',
+      root: 'ring',
+      value: { kind: 'named', value: 'inset-undefined' },
+      variants: [ [Object] ]
+    },
+    {
+      kind: 'functional',
+      root: 'ring',
+      value: { kind: 'named', value: 'indigo-600' },
+      variants: [ [Object] ]
+    },
+    {
+      kind: 'functional',
+      root: 'leading',
+      value: { kind: 'named', value: '6-undefined' },
+      variants: [ [Object] ]
+    },
+    {
+      kind: 'functional',
+      root: 'right',
+      value: { kind: 'named', value: '0' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'sr',
+      value: { kind: 'named', value: 'only' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'h',
+      value: { kind: 'named', value: 'full' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'bg',
+      value: { kind: 'named', value: 'transparent' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'py',
+      value: { kind: 'named', value: '0' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'pl',
+      value: { kind: 'named', value: '2' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'pr',
+      value: { kind: 'named', value: '7' },
+      variants: []
+    }
+  ]
+
+
+  Set(38) {
+    
+    'sm:text-sm',
+    'w-full',
+    'border-0',
+    'py-1.5',
+    'pl-7',
+    'pr-20',
+    'ring-1',
+    'ring-inset',
+    'ring-gray-300',
+    'placeholder:text-gray-400',
+    'focus:ring-2',
+    'focus:ring-inset',
+    'focus:ring-indigo-600',
+    'sm:leading-6',
+    'right-0',
+    'sr-only',
+    'h-full',
+    'bg-transparent',
+    'py-0',
+    'pl-2',
+    'pr-7'
+  }
