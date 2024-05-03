@@ -1,18 +1,18 @@
 
 
 export class Node{
-    // constructor(){
-    //     this.node =[]
-    //     this.size=0
-    //     this.input = ''
-        
-    // }
-    constructor(input){
+    constructor(){
         this.node =[]
         this.size=0
-        this.input = input
+        this.input = ''
         
     }
+    // constructor(input){
+    //     this.node =[]
+    //     this.size=0
+    //     this.input = input
+        
+    // }
     incrementsize(){
         this.size=this.size+1
     }

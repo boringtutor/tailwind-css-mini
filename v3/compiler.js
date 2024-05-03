@@ -27,11 +27,11 @@ async function buildCSS() {
 //    console.log(usedClasses);
    
     let nn = new Node('sm:text-sm');
-    let res = nn.append_colon_seprator();
-    console.log(res[0])
-    // let res = nn.createAst(usedClasses);
-    // console.log('this is the result i got')
-    // console.log(res)
+    // let res = nn.append_colon_seprator();
+    // console.log(res[0])
+    let res = nn.createAst(usedClasses);
+    console.log('this is the result i got')
+    console.log(res)
     // console.warn('this is the result i got')
     
 

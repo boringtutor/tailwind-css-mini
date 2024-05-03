@@ -1,10 +1,90 @@
 [
-    
-  
+    { kind: 'static', negative: false, root: 'block', variants: [] },
     {
       kind: 'functional',
       root: 'text',
-      value: { kind: 'named', value: 'sm-undefined' },
+      value: { kind: 'named', value: 'sm' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'font',
+      value: { kind: 'named', value: 'medium' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'leading',
+      value: { kind: 'named', value: '6' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'text',
+      value: { kind: 'named', value: 'gray-900' },
+      variants: []
+    },
+    { kind: 'static', negative: false, root: 'relative', variants: [] },
+    {
+      kind: 'functional',
+      root: 'mt',
+      value: { kind: 'named', value: '2' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'rounded',
+      value: { kind: 'named', value: 'md' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'shadow',
+      value: { kind: 'named', value: 'sm' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'pointer',
+      value: { kind: 'named', value: 'events-none' },
+      variants: []
+    },
+    { kind: 'static', negative: false, root: 'absolute', variants: [] },
+    {
+      kind: 'functional',
+      root: 'inset',
+      value: { kind: 'named', value: 'y-0' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'left',
+      value: { kind: 'named', value: '0' },
+      variants: []
+    },
+    { kind: 'static', negative: false, root: 'flex', variants: [] },
+    {
+      kind: 'functional',
+      root: 'items',
+      value: { kind: 'named', value: 'center' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'pl',
+      value: { kind: 'named', value: '3' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'text',
+      value: { kind: 'named', value: 'gray-500' },
+      variants: []
+    },
+    {
+      kind: 'functional',
+      root: 'text',
+      value: { kind: 'named', value: 'sm' },
       variants: [ [Object] ]
     },
     {
@@ -64,13 +144,13 @@
     {
       kind: 'functional',
       root: 'ring',
-      value: { kind: 'named', value: '2-undefined' },
+      value: { kind: 'named', value: '2' },
       variants: [ [Object] ]
     },
     {
       kind: 'functional',
       root: 'ring',
-      value: { kind: 'named', value: 'inset-undefined' },
+      value: { kind: 'named', value: 'inset' },
       variants: [ [Object] ]
     },
     {
@@ -82,7 +162,7 @@
     {
       kind: 'functional',
       root: 'leading',
-      value: { kind: 'named', value: '6-undefined' },
+      value: { kind: 'named', value: '6' },
       variants: [ [Object] ]
     },
     {
